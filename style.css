@@ -1,0 +1,120 @@
+html, body {
+background-image: url('img.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+color: white;
+text-align: center;
+margin: 0px;
+overflow: hidden;
+}
+
+.loader {
+position: absolute;
+left: 50%;
+top: 20%;
+margin: -75px 0 0 -75px;
+
+border: 10px solid #00afcc;
+border-radius: 50%;
+border-top: 10px solid #02063f;
+border-left: 10px solid #02063f;
+width: 120px;
+height: 120px;
+animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+0% {
+transform: rotate(0deg);
+}
+
+100% {
+transform: rotate(360deg);
+}
+}
+
+.info {
+overflow: hidden;
+position: fixed;
+position: absolute;
+top: 35%;
+left: 50%;
+
+font-size: 30px;
+font-family: sans-serif;
+
+
+transform: translate(-50%, -50%);
+}
+
+.button {
+		  background-color: #003263;  
+		  border-radius: 5px;
+		  color: white;
+		  padding: .5em;
+		  text-decoration: none;
+		  height:100%;
+		  width: 50%;
+		  display:inline-table;
+		  font-family: system-ui;
+		}
+
+		.button:focus,
+		.button:hover {
+		  background-color: #007bff;
+		  color: White;
+		}
+.awesome {
+  overflow: hidden;
+position: fixed;
+position: absolute;
+top: 50%;
+left: 50%;
+font-weight: bold;
+font-size: 30px;
+font-family: sans-serif;
+color: #FFF;
+
+transform: translate(-50%, -50%);
+
+}
+.bling {
+
+  -webkit-animation: colorchange 20s infinite alternate;
+  font-size: 35px;
+}
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+  10% {
+    color: #8e44ad;
+  }
+  20% {
+    color: #06b491;
+  }
+  30% {
+    color: #d35400;
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: #203d5a;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: #29b941;
+  }
+  80% {
+    color: #f1c40f;
+  }
+  90% {
+    color: #037aca;
+  }
+  100% {
+    color: rgb(156, 4, 30);
+  }
+}
